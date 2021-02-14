@@ -2,7 +2,14 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license !== 'none') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]`;
+    let licenseString
+    if(license == 'MIT'){
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]'
+    }
+    if(license == 'Mozilla'){
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]'
+    }
+    // return `[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]`;
   } 
   return '';
  
@@ -20,9 +27,8 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-# ${data.title}
+  return `# Title 
+${data.title}
 
 ## Description
 ${data.description}
