@@ -1,9 +1,9 @@
 # README.md-generator
 
 ## User Story 
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+* AS A developer
+* I WANT a README generator
+* SO THAT I can quickly create a professional README for a new project
 
 ## Acceptance Criteria
 GIVEN a command-line application that accepts user input
@@ -21,3 +21,10 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
+
+### Repository Link 
+[title](https://github.com/coricathemer/README.md-generator)
+
+### Screenshot 
+![working-image](assets\images\readme-assignment.png)

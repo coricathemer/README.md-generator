@@ -71,7 +71,7 @@ ${data.tests}
 
 ## Questions
 If you have questions about my project I can be reached at: ${data.email}
-For more information and repos visit: github.com/${data.github}
+To see more repos visit: [Github](https://github.com/${data.github})
 
 `;
 }
