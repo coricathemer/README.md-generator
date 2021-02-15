@@ -4,10 +4,10 @@ function renderLicenseBadge(license) {
   if(license !== 'none') {
     let licenseString
     if(license == 'MIT'){
-      return '[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]'
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     }
     if(license == 'Mozilla'){
-      return '[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]'
+      return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
     }
     // return `[![License: MIT](https://img.shields.io/badge/License-MIT-${license})]`;
   } 
@@ -33,7 +33,28 @@ ${data.title}
 ## Description
 ${data.description}
 
+## Table of Contents
+${data.toc}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+${data.license}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+${data.questions}
+
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown, renderLicenseBadge;
