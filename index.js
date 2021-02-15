@@ -3,6 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 // const choices = require('inquirer/lib/objects/choices');
 const generateMarkdown = require('./utils/generateMarkdown');
+const renderLicenseBadge = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -20,7 +21,7 @@ const questions = [
   {
     type: 'input',
     message: 'What is the table of contents for this Project?', 
-    name: 'table of contents',
+    name: 'toc',
   },
   {
     type: 'input',
@@ -35,7 +36,7 @@ const questions = [
   {
     type: 'list',
     message: 'What is the licensing of this Project',
-    choices: ['MIT', 'Mozzila', 'None'],
+    choices: ['MIT', 'Mozilla', 'None'],
     name: 'license',
   },
   {
@@ -70,6 +71,7 @@ function init() {
   console.log('Started')
   inquirer.prompt(questions).then((answers) => {
     const response = generateMarkdown(answers);
+    renderLicenseBadge
     console.log(answers);
     //make output folder "./output/README.md"
     writeToFile('./output/output.md', response)
