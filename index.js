@@ -3,25 +3,20 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 // const choices = require('inquirer/lib/objects/choices');
 const generateMarkdown = require('./utils/generateMarkdown');
-const renderLicenseBadge = require('./utils/generateMarkdown');
+// const renderLicenseBadge = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
   // pass in questions here
   {
     type: 'input',
-    message: 'What is the name of your Project?',
+    message: 'What is the title of your Project?',
     name: 'title',
   },
   {
     type: 'input',
     message: 'Please enter a description of your Project.', 
     name: 'description',
-  },
-  {
-    type: 'input',
-    message: 'What is the table of contents for this Project?', 
-    name: 'toc',
   },
   {
     type: 'input',
@@ -46,13 +41,18 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'What tests has this Project run?', 
+    message: 'What are some features that can be run to test the functionality of this application?', 
     name: 'tests',
   },
   {
     type: 'input',
-    message: 'Additional questions for this Project?', 
-    name: 'questions',
+    message: 'What is your github username?', 
+    name: 'github',
+  },
+  {
+    type: 'input',
+    message: 'What is your email address?', 
+    name: 'email',
   },
 ]
 
@@ -71,7 +71,7 @@ function init() {
   console.log('Started')
   inquirer.prompt(questions).then((answers) => {
     const response = generateMarkdown(answers);
-    renderLicenseBadge
+    // renderLicenseBadge
     console.log(answers);
     //make output folder "./output/README.md"
     writeToFile('./output/output.md', response)
