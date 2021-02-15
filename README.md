@@ -22,9 +22,14 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
+## Usage
+Clone repo, download packages, run node index.js in the command line, answer questions, and your README.md will showup in the output.md folder. 
 
 ### Repository Link 
 [REPO link](https://github.com/coricathemer/README.md-generator)
 
 ### Screenshot 
-![working-image](README.md-generator\assets\images\readme-assignment.png)
+![README.md screenshot](./assets/images/readme-assignment.png)
+
+### Youtube link 
+[Youtube](https://youtu.be/ZfKSOlNh-P8)

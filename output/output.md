@@ -1,10 +1,10 @@
 # Title 
-README.md 
+README-generator 
   ## License 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This application is used to generate a README.md file based on user input
+Based on user input this application will take user answers and display them in the output.md folder to create a README.md file
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,10 +13,10 @@ This application is used to generate a README.md file based on user input
 * [Contributing](#contributing)
 
 ## Installation
-You can clone a copy of this repo on github.com
+As a developer you can go to github.com/coricathemer/README.md-generator and download the starter code. Then install the needed packages and you will be able to use this application for README.md files
 
 ## Usage
-This project is used to auto generate a README.md file 
+To create a README.md file
 
 ## License
 MIT
@@ -25,7 +25,7 @@ MIT
 Cori Cathemer 
 
 ## Tests
-You can run node index.js in the command line to test the functionality of this project. 
+Once all packages are installed running node index.js in the command line will let you test the question/answer feature.
 
 ## Questions
 If you have questions about my project I can be reached at: coricathemer@gmail.com
