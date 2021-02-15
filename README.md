@@ -27,4 +27,4 @@ THEN I am taken to the corresponding section of the README
 [REPO link](https://github.com/coricathemer/README.md-generator)
 
 ### Screenshot 
-![working-image](readme-assignment.png)
+![working-image](README.md-generator\assets\images\readme-assignment.png)
